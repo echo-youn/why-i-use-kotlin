@@ -1,5 +1,6 @@
 plugins {
-    kotlin("jvm") version "1.9.0"
+    java
+//    kotlin("jvm") version "1.9.0"
 }
 
 group = "com.nexon.liveapi"
@@ -17,6 +18,10 @@ tasks.test {
     useJUnitPlatform()
 }
 
-kotlin {
-    jvmToolchain(8)
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
 }
+
+//kotlin {
+//    jvmToolchain(17)
+//}
