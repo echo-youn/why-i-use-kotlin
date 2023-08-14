@@ -16,12 +16,13 @@ fun main() {
 
 
 // 프로퍼티 선언 data class, class 차이
-data class MyComplexClass(
+class MyComplexClass(
     private val privateProperty: String,
     val readOnlyProperty: Int,
     var reAssignableProperty: Int,
     val optionalProperty: String = "",
-    val nullableProperty: String? = null
+    val nullableProperty: String? = null,
+    constructorParameter: String? = null // value-parameter, 생성자에서 사용하는 매개변수일뿐..
 ) {
     lateinit var memberProperty: String
 
