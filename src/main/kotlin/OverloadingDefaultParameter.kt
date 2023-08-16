@@ -35,7 +35,7 @@ class MyComplexClass(
     }
 
     fun getMemberProperty() {
-        println(memberProperty)
+        println(memberProperty!!)
     }
 
     // 생성자 생성 가능
